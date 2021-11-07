@@ -12,7 +12,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
+    <main className="mb-medium">
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
@@ -20,7 +20,7 @@ function App() {
         <Route exact path="/rooms/:slug" component={SingleRoom} />
         <Route component={Error} />
       </Switch>
-    </>
+    </main>
   );
 }
 
